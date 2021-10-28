@@ -1,0 +1,75 @@
+#rectangle {
+    width:100px;
+    height:100px;
+    background-color: purple;
+    background-image: linear-gradient(to right, pink , purple);
+}
+body {
+        background-image: url('https://image.freepik.com/vector-gratis/fondos-simples-acuarela-colores_1340-8452.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+
+div {
+  box-shadow: 10px 10px 5px #ff00f3;
+}
+
+.ampli{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.ampli:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+
+ .mar:hover {
+    transform: skew(30deg, 30deg);
+    transition-timing-function: steps(75, jump-end);
+    transition-duration: 1s;
+}
+ .car{ 
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.tl{
+  width:100px;
+  height:100px;
+  background-color: purple;
+  background-image: linear-gradient(to right, pink , purple);
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#tl1 {animation-timing-function: linear;}
+#tl2 {animation-timing-function: ease;}
+#tl3 {animation-timing-function: ease-in;}
+#tl4 {animation-timing-function: ease-out;}
+#tl5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
