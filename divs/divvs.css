@@ -1,0 +1,85 @@
+.parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+height: 60vw ;
+width: 40 vh ;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 7; }
+.div2 { grid-area: 2 / 1 / 4 / 4; }
+.div3 { grid-area: 2 / 4 / 4 / 7; }
+.div4 { grid-area: 4 / 1 / 6 / 4; }
+.div5 { grid-area: 4 / 4 / 6 / 7; }
+.div6 { grid-area: 6 / 1 / 7 / 7; }
+
+.div1{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color: purple;
+  background-image: linear-gradient(to right, black, red);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.div2{
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.div2:hover{
+	transform: skew(30deg, 30deg);
+    transition-timing-function: steps(75, jump-end);
+    transition-duration: 1s;
+}
+
+.div3{
+	
+	border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.div4{
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.div4:hover{
+  transform: rotate(180deg);
+}
+.div5{
+	background-color: lightslategrey;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.div6{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color: purple;
+  background-image: linear-gradient(to right, red , black);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+body{
+	background-image: url(https://c.tenor.com/QNSkyS6d368AAAAd/itachi-uchiha-naruto.gif);
+	background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+h1{
+	color: white;
+
+}
